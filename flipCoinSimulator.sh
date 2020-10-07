@@ -55,3 +55,17 @@ do
 		fi
 done
 
+#usercase4
+if [ $((RANDOM%2)) -eq 1 -o $((RANDOM%2)) -eq 1 -a $((RANDOM%2)) -eq 1 ]
+then
+    ((heads++))
+    ((heads++))
+    echo "heads wins by: " $heads
+else
+    ((tails++))
+    ((tails++))
+    echo "tails wins by: " $tails
+fi
+	exit
+else
+	continue
